@@ -1,5 +1,6 @@
 package tw.edu.bircdemo.controller;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,6 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import tw.edu.bircdemo.bean.MemberBean;
 import tw.edu.bircdemo.service.MemberService;
@@ -37,7 +43,7 @@ public class MemberController {
 		ObjectNode result = mapper.createObjectNode();
 		result.put("result", true);
 		result.put("errorCode", 200);
-		result.put("message", "ï¿½sï¿½Wï¿½ï¿½ï¿½\");
+		result.put("message", "·s¼W¦¨¥\");
 		ObjectNode dateNode = result.putObject("date");
 		dateNode.put("id", memberBean.getId());
 		dateNode.put("firstName", memberBean.getFirstName());
