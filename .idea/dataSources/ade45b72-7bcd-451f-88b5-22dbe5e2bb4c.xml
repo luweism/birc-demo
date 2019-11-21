@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Microsoft SQL Server - practice@140.131.115.147">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.16">
+    <root id="1">
+      <ServerVersion>14.0.1000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="calendar">
+      <ObjectId>6</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="first_spring">
+      <ObjectId>7</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="practice">
+      <ObjectId>8</ObjectId>
+      <Current>1</Current>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+      <Fingerprint>8.43782/42A77438-77E3-4EF6-84DB-42736E5134D8@DESKTOP-ANA0R2D</Fingerprint>
+    </database>
+    <database id="8" parent="1" name="sunlight">
+      <ObjectId>5</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <database id="9" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Chinese_Taiwan_Stroke_CI_AS</Collation>
+    </database>
+    <schema id="10" parent="7" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="11" parent="7" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="12" parent="7" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="13" parent="7" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="14" parent="7" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="15" parent="7" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="16" parent="7" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="17" parent="7" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="18" parent="7" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="19" parent="7" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="20" parent="7" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-11-15.02:16:11.460</IntrospectionTimestamp>
+      <Current>1</Current>
+      <DescriptionsCheckSum>422571281</DescriptionsCheckSum>
+    </schema>
+    <schema id="21" parent="7" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="22" parent="7" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="23" parent="20" name="member">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2019-11-15.02:09:53.437</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-15.02:09:53.450</ModifiedTimestamp>
+    </table>
+    <column id="24" parent="23" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="23" name="first_name">
+      <Position>2</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="23" name="last_name">
+      <Position>3</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="23" name="email">
+      <Position>4</Position>
+      <DataType>varchar(100 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="23" name="gender">
+      <Position>5</Position>
+      <Comment>0:男生、1:女生</Comment>
+      <DataType>char(1 char)|0s</DataType>
+    </column>
+    <index id="29" parent="23" name="PK_member">
+      <Position>1</Position>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="30" parent="23" name="PK_member">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2019-11-15.02:09:53.443</CreatedTimestamp>
+      <ModifiedTimestamp>2019-11-15.02:09:53.443</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK_member</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
